@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>billing form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+
+</head>
+
+<body>
+  <div class="container">
+   
+        <div class=" col-md-4 order-md-2">
+          <h3>Your cart</h3>
+          <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>Product Name</span><span>$12</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>Second product</span><span>$8</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>Third item</span><span>$22</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>Promo code</span><span>$5</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>Total</span><span>$45</span></li>
+          <button type="button" class="btn btn-outline-dark">Reedom</button>
+        </ul>
+        
+    
+
+    div>
+      <div class="left">
+          <h3>Billing Address</h3>
+          <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-at"></i></span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Address</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="type your address">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">country</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Shipping Address is same as my billing address 
+                </label>
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                  Save this information fot next time 
+                      </label>
+              </div>
+            </div>
+            <p>Payments</p>
+            <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="credit card" name="credit card" id="credit card" value="option1" checked>
+                  <label class="form-check-label" for="creditcard">
+                  credit card
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="cpaypal" name="credit card" id="paypal" value="option1" checked>
+                    <label class="form-check-label" for="paypal">
+                pay pal
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="debit card" name=" card" id="debit card" value="option2">
+                  <label class="form-check-label" for="debitcard">
+                Debit card
+                 <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="firstName">Name on card</label>
+                      <input type="text" class="form-control" id="creditcardnumber" placeholder="">
+                      <p>Full name as displayed on card</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lastName">credit card number</label>
+                      <input type="text" class="form-control" id="creditcardnumber" placeholder="">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="firstName">expiration</label>
+                            <input type="text" class="form-control" id="creditcardnumber" placeholder="">
+                            <p>Full name as displayed on card</p>
+
+
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="lastName">cvv</label>
+                            <input type="text" class="form-control" id="creditcardnumber" placeholder="">
+                          </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">continue to checkout</button>
+            
+      </div>
+      <div class="right">
+      </div>
+  </div>
+</div>
